@@ -7,3 +7,12 @@ C:\Users\gabriel.bernardone\Desktop\Projeto\Allura\Allura\bin\Debug\Allura.exe
 C:\Users\gabriel.bernardone\Desktop\Projeto\Allura\Allura\bin\Debug\Allura.pdb
 C:\Users\gabriel.bernardone\Desktop\Projeto\Allura\Allura\obj\Debug\Allura.exe
 C:\Users\gabriel.bernardone\Desktop\Projeto\Allura\Allura\obj\Debug\Allura.pdb
+C:\Users\gabriel.bernardone\Desktop\Encontre_o _telefone\Allura\Allura\bin\Debug\Allura.exe.config
+C:\Users\gabriel.bernardone\Desktop\Encontre_o _telefone\Allura\Allura\obj\Debug\Allura.exe
+C:\Users\gabriel.bernardone\Desktop\Encontre_o _telefone\Allura\Allura\obj\Debug\Allura.pdb
+C:\Users\gabriel.bernardone\Desktop\Encontre_o _telefone\Allura\Allura\bin\Debug\Allura.exe
+C:\Users\gabriel.bernardone\Desktop\Encontre_o _telefone\Allura\Allura\bin\Debug\Allura.pdb
+C:\Users\gabriel.bernardone\Desktop\Encontre_o _telefone\Allura\Allura\obj\Debug\Allura.csprojResolveAssemblyReference.cache
+C:\Users\gabriel.bernardone\Desktop\Encontre_o _telefone\Allura\Allura\obj\Debug\Allura.Form1.resources
+C:\Users\gabriel.bernardone\Desktop\Encontre_o _telefone\Allura\Allura\obj\Debug\Allura.Properties.Resources.resources
+C:\Users\gabriel.bernardone\Desktop\Encontre_o _telefone\Allura\Allura\obj\Debug\Allura.csproj.GenerateResource.Cache

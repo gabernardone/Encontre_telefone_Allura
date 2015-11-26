@@ -8,30 +8,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Globalization;
 
 namespace Allura
 {
     public partial class Form1 : Form
     {
+
+
         public Form1()
         {
             InitializeComponent();
         }
-
-        public string PesquisaDicionario(string valor)
-        {
-
-
-
-
-            return valor;
-        }
+  
+       
         public String Limpa(string telefone)
         {
             telefone = telefone.Replace("-", "");
 
             //Declarando o objeto Dictionary, e o tipo
-            //para a chave e para o valor.
+            //para a chave e valor.
+
             Dictionary<int, string> dicTelefone = new Dictionary<int, string>();
 
             //Preenchendo o dicionario de dados
@@ -58,35 +55,27 @@ namespace Allura
             for (int i = 0; i < telefone.Length; i++)
             {
 
-                //Regex que vc quer
-                string verifica = "^[a-zA-Z]";
+                //Regex para validar letra
+                const string verifica = "^[a-zA-Z]";
                 string Caracter = telefone[i].ToString();
 
                 if (Regex.IsMatch(Caracter, verifica))
                 {
-                    if (dicTelefone[1].Contains(telefone[i]))
+                    if (dicTelefone.Any(kvp => kvp.Value.Contains(telefone[i].ToString())))
                     {
-                        switch (telefone[i])
-                        {
-                            case 'A':
-                            case 'B':
-                            case 'C':
 
-                                var pesquisar = dicTelefone.Where(p => p.Key == telefone[i]).Select(p => p.Value);
+                        var resultKey = dicTelefone
+                            .FirstOrDefault(x => x.Value.Contains(telefone[i].ToString()))
+                            .Key;
 
-                                foreach (var key in pesquisar)
-                                {
-                                    result += key.ToString();
-                                }
-
-                                break;
-                        }
-
+                        telefone = telefone.Replace(Caracter, resultKey.ToString());
+              
                     }
+                    result = telefone;
                 }
-                
+
             }
-            return string.Join("", result);
+            return result;
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
